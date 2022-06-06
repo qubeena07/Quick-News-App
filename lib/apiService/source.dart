@@ -13,7 +13,7 @@ class Source {
     return Source(
       title: json['id'],
       description: json['description'] ?? '',
-      urlToImage: json["urlToImage"],
+      urlToImage: json["urlToImage"] ?? '',
     );
   }
 }

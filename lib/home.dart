@@ -44,20 +44,26 @@ class _HomeScreenState extends State<HomeScreen> {
             if (snapshot.hasData) {
               List<Article>? articles = snapshot.data;
 
-              // return Center(
-              //   child: Text("sucess"),
-              // );
-
               return ListView.builder(
                   itemCount: articles?.length,
                   itemBuilder: (context, index) => ListTile(
-                        title: Text(articles![index].title),
-                        subtitle: Text(articles[index].description),
+                        title: Text(
+                          articles![index].title,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 15),
+                        ),
+                        subtitle: Text(
+                          articles[index].description,
+                          style: TextStyle(fontSize: 10),
+                        ),
+                        leading: SizedBox(
+                          height: 100,
+                          width: 100,
+                          child: Image.network(articles[index].urlToImage),
+                        ),
                       ));
             }
             return Center(
-              // child: Text("sucess"),
-
               child: CircularProgressIndicator(
                 color: Colors.green,
               ),

@@ -1,7 +1,7 @@
 import 'source.dart';
 
 class Article {
-  Source source;
+  // Source source;
   String author;
   String title;
   String description;
@@ -11,7 +11,7 @@ class Article {
   String content;
 //constructor
   Article({
-    required this.source,
+    // required this.source,
     required this.author,
     required this.title,
     required this.description,
@@ -23,8 +23,8 @@ class Article {
   // function to map json file
   factory Article.fromJson(Map<String, dynamic> json) {
     return Article(
-        source: Source.fromJson(json['source']),
-        author: json['author'] as String,
+        // source: Source.fromJson(json['source']),
+        author: json['author'] ?? '',
         title: json['title'] as String,
         description: json['description'] as String,
         url: json['url'] as String,
