@@ -78,27 +78,8 @@ class _SplashScreenState extends State<SplashScreen> {
                             color: Colors.white,
                             fontSize: 30.0,
                             fontWeight: FontWeight.w800)),
-                    // FadeAnimatedText(
-                    //   "News",
-                    //   textStyle: TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 30.0,
-                    //       fontWeight: FontWeight.w800),
-                    // ),
-                    // FadeAnimatedText(
-                    //   "For you ",
-                    //   textStyle: TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 30.0,
-                    //       fontWeight: FontWeight.w800),
-                    // ),
-                    // TypewriterAnimatedText(
-                    //   "News",
-                    //   textStyle: TextStyle(
-                    //       color: Colors.white,
-                    //       fontSize: 30.0,
-                    //       fontWeight: FontWeight.w800),
-                    // ),
+                    
+                   
                   ])
                 ],
               ),

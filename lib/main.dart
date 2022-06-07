@@ -8,10 +8,7 @@ Future main() async {
   final showHome = prefs.getBool("showHome") ?? false;
 
   prefs.setBool("showHome", true);
-  // WidgetsFlutterBinding.ensureInitialized();
-  // SharedPreferences prefs = await SharedPreferences.getInstance();
-  // isViewed = prefs.getInt("'splashScreen'");
-
+  
   runApp(QuickNews(showHome: showHome));
 }
 
